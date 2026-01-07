@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faith Connect - Connexion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+
+    <div class="bg-white p-8 rounded-lg shadow-lg max-w-sm w-full text-center">
+        <div class="mb-6">
+            <svg class="w-16 h-16 mx-auto text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"></path>
+            </svg>
+            <h1 class="text-2xl font-bold text-gray-800 mt-2">Faith Connect</h1>
+            <p class="text-gray-500 text-sm">Connectez-vous à votre communauté</p>
+        </div>
+
+        <div id="message-box" class="hidden mb-4 p-3 rounded text-sm"></div>
+
+        <div class="space-y-4">
+            <input type="email" id="email" placeholder="Votre Email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+            
+            <input type="password" id="password" placeholder="Mot de passe" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+            
+            <button onclick="handleLogin()" class="w-full bg-purple-600 text-white py-2 rounded-lg hover:bg-purple-700 transition font-semibold">
+                Se connecter
+            </button>
+
+            <button onclick="handleSignUp()" class="w-full bg-white text-purple-600 border border-purple-600 py-2 rounded-lg hover:bg-purple-50 transition">
+                Créer un compte
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
